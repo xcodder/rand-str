@@ -1,0 +1,17 @@
+{
+  "name": "rand-str",
+  "version": "1.0.0",
+  "description": "Random String Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Random",
+    "random",
+    "string",
+    "hash"
+  ],
+  "author": "xcodder",
+  "license": "ISC"
+}

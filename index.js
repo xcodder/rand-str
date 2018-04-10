@@ -74,11 +74,6 @@ genStr.tie = function(options) {
 }
 
 
-let gen = genStr.tie({length: 24, include: {lower: 1, upper: 1}})
-console.log(gen())
-console.log()
-console.log(gen())
-console.log()
-console.log(gen())
+module.exports = genStr
 
 

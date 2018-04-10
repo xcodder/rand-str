@@ -35,7 +35,7 @@ function genStr(options) {
   }
 
   let all = {};
-  ["lower", "upper", "special", "numbers"].forEach(key => {
+  Object.keys(def).forEach(key => {
     let v = inc[key]
     if(typeof v === 'string') {
       return all[key] = v
@@ -73,4 +73,12 @@ genStr.tie = function(options) {
   return genStr.bind(this, options)
 }
 
-module.exports = genStr
+
+let gen = genStr.tie({length: 24, include: {lower: 1, upper: 1}})
+console.log(gen())
+console.log()
+console.log(gen())
+console.log()
+console.log(gen())
+
+
